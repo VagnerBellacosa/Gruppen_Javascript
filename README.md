@@ -2,7 +2,7 @@
 
 Bem vindo a nosso Javascript Gruppen.
 
-![Welcome Jedis e Padawans](./Images/Welcome.png)
+![Welcome Jedis e Padawans](Images/Welcome.png)
 
 # Ingresse no Javascript Gruppen
 
@@ -54,4 +54,3 @@ Faça as atividades, seja honesto consigo mesmo, treinando e trocando ideias com
 Sem pressão e sem prazo, siga a sua propria velocidade.
 
 [Conheças as atividades em nosso Gruppen](ListaAtividade.Md)
-
