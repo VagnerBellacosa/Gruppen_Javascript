@@ -12,7 +12,7 @@ Qualquer coisa é so gritar SOCORRO!!!!!
 | **002** | Artigos e cursos na DIO | [Atividade 002](Atividades/Atividade002/ReadMe.Md) | :white_check_mark:  |
 | **003** | Mozilla JavaScript e meus Repositorios GITHub | [Atividade 003](Atividades/Atividade003/ReadMe.Md) | :white_check_mark:  |
 | **004** | Primeira Lista de Exercicios | [Atividade 004](Atividades/Atividade004/ReadMe.Md) | :white_check_mark:  |
-| **005** |  |  | |
+| **005** | Treine HTML e Inputs Form validando com JavaScript | [Atividade 004](Atividades/Atividade005/ReadMe.Md) | :white_check_mark:  |
 | **006** |  |  | |
 | **007** |  |  | | 
 | **008** |  |  | |
