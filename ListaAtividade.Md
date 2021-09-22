@@ -15,6 +15,6 @@ Qualquer coisa é so gritar SOCORRO!!!!!
 | **005** | Treine HTML e Inputs Form validando com JavaScript | [Atividade 005](Atividades/Atividade005/ReadMe.Md) | :white_check_mark:  |
 | **006** | Conheça as diversas implementaçoes do ECMAScript|   [Atividade 006](Atividades/Atividade006/ReadMe.Md) | :white_check_mark:  |
 | **007** | Assync & Await |  [Atividade 007](Atividades/Atividade007/ReadMe.Md) | :white_check_mark:  |
-| **008** | Atividades com Date, Substring, IF e FOR |  [Atividade 007](Atividades/Atividade008/ReadMe.Md) | :white_check_mark:  |
+| **008** | Atividades com Date, Substring, IF e FOR |  [Atividade 008](Atividades/Atividade008/ReadMe.Md) | :white_check_mark:  |
 | **009** |  |  | |
 | **010** |  |  | |
