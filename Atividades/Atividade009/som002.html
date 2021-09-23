@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  
+  <style>
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {background-color: #4CAF50;} /* Green */
+.button2 {background-color: #008CBA;} /* Blue */
+</style>
+
+  <title>Document</title>
+ </head>
+ <body>
+
+<button class="button button1">Click Me</button>
+
+ <script>
+    
+ const context = new AudioContext()
+    
+    document.querySelector('button').addEventListener('click', () => {
+      const oscillator = context.createOscillator()
+    
+      oscillator.frequency.value = 440
+      oscillator.type = 'sine'
+      oscillator.connect(context.destination)
+    
+      oscillator.start(context.currentTime)
+      setTimeout(() => oscillator.stop(context.currentTime), 500)
+    })
+	
+</script>
+
+ </body>
+</html>

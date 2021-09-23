@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  
+  <style>
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {background-color: #4CAF50;} /* Green */
+.button2 {background-color: #008CBA;} /* Blue */
+</style>
+
+  <title>Document</title>
+ </head>
+ <body>
+
+<button class="button button1">Click Me</button>
+
+ <script>
+    
+	
+    function playNote(frequency) {
+      /* ... */
+      oscillator.frequency.value = frequency
+      /* ... */
+    };
+	
+	 const context = new AudioContext();
+	 
+	 const notes = {
+      a: 'C4',
+      s: 'D4',
+      d: 'E4',
+      f: 'F4',
+      g: 'G4',
+      h: 'A4',
+      j: 'B4',
+      k: 'C5'
+    };
+    
+    document.addEventListener('keypress', ({key}) => {
+      const note = notes[key]
+      const {frequency} = new Note(note)
+	  console.log(frequency)
+      playNote(frequency)
+    });
+	
+</script>
+
+ </body>
+</html>
