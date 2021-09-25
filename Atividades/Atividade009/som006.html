@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  
+	<style>
+
+html, body{
+  margin: 5px;
+  padding: 5px;
+  background-color: #252539;
+  min-height: 80px;
+}
+
+div{
+  display: flex;
+  justify-content: center;
+}
+
+button{
+  background-color: #e93e8b;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+button:hover{
+  background-color: #d2387d;
+}
+
+	</style>
+
+  <title>Document</title>
+ </head>
+ <body>
+
+<div>
+  <button id="stopButton1" >C</button>
+  <button id="stopButton2" >D</button>
+  <button id="stopButton3" >E</button>
+  <button id="stopButton4" >F</button>
+  <button id="stopButton5" >G</button>
+  <button id="stopButton6" >A</button>
+  <button id="stopButton7" >B</button>
+</div>
+	
+	<script>
+
+	const stopButton1 = document.querySelector('#stopButton1'),
+  stopButton2 = document.querySelector('#stopButton2'),
+  stopButton3 = document.querySelector('#stopButton3'),
+  stopButton4 = document.querySelector('#stopButton4'),
+  stopButton5 = document.querySelector('#stopButton5'),
+  stopButton6 = document.querySelector('#stopButton6'),
+  stopButton7 = document.querySelector('#stopButton7');
+  
+const c4 = 261.6,
+	d4 = 293.7,
+  e4 = 329.6,
+  f4 = 349.2,
+  g4 = 392.0,
+  a4 = 440.0,
+  b4 = 493.9;
+
+  	
+let context,
+	oscillator,
+  contextGain,
+  x = 1,
+  type = 'sine',
+  frequency;
+
+function start(){
+	context = new AudioContext();
+	oscillator = context.createOscillator();
+  contextGain = context.createGain();
+  oscillator.frequency.value = frequency;
+  oscillator.type = type;
+  oscillator.connect(contextGain);
+	contextGain.connect(context.destination);
+	oscillator.start(0);
+}
+
+function stop(){
+  start();
+  contextGain.gain.exponentialRampToValueAtTime(
+  	0.00001, context.currentTime + x
+	)
+}
+
+stopButton1.addEventListener('click', function(){
+	frequency = c4;
+  stop();
+});
+stopButton2.addEventListener('click', function(){
+	frequency = d4;
+  stop();
+});
+stopButton3.addEventListener('click', function(){
+	frequency = e4;
+  stop();
+});
+stopButton4.addEventListener('click', function(){
+	frequency = f4;
+  stop();
+});
+stopButton5.addEventListener('click', function(){
+	frequency = g4;
+  stop();
+});
+stopButton6.addEventListener('click', function(){
+	frequency = a4;
+  stop();
+});
+stopButton7.addEventListener('click', function(){
+	frequency = b4;
+  stop();
+}); 
+	  
+	</script>
+
+ </body>
+</html>

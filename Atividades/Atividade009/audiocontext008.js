@@ -1,6 +1,7 @@
-    const context = new AudioContext();
-    const oscillator = context.createOscillator();
+const context = new AudioContext();
+const oscillator = context.createOscillator();
 
-    oscillator.frequency.value = 440;
-    oscillator.type = 'sine';
-	oscillator.start();
+oscillator.frequency.value = 440;
+oscillator.type = 'sine';
+
+oscillator.start();

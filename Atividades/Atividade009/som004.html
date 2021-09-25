@@ -29,17 +29,27 @@
  <body>
 
 <button class="button button1">Click Me</button>
-
- <script>
-    
 	
+ <script>
+
+	 const context = new AudioContext();
+	 const oscillator = context.createOscillator();
+
+var a = 2;
+console.log(a);
+    	
     function playNote(frequency) {
       /* ... */
-      oscillator.frequency.value = frequency
+      oscillator.frequency.value = frequency;
+	  oscillator.start(context.currentTime);
+      setTimeout(() => oscillator.stop(context.currentTime), 500);
       /* ... */
+      console.log(" Olaaa "); 
+	  console.log(note);
+	  console.log(frequency);
+	  
     };
 	
-	 const context = new AudioContext();
 	 
 	 const notes = {
       a: 'C4',
@@ -54,11 +64,14 @@
     
     document.addEventListener('keypress', ({key}) => {
       const note = notes[key]
-      const {frequency} = new Note(note)
-	  console.log(frequency)
-      playNote(frequency)
+      const {frequency} = new Note(note)	  	 
+	  
+	  console.log(key);
+	  console.log(note);
+	  console.log(frequency);
+//      playNote(frequency)
     });
-	
+	  
 </script>
 
  </body>
