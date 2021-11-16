@@ -16,7 +16,7 @@ Bem vindo a nosso Javascript Gruppen.
 
 
 
-# Ingresse no Javascript Gruppen
+# ![image-20211116141332505](Images\image-20211116141332505.png) Ingresse no Javascript Gruppen
 
 Participe de um grupo de estudos em Javascript. Juntos vamos treinar codificação e comandos para aprimorarmos nossos hard skills nesta fabulosa linguagem.
 
@@ -37,13 +37,14 @@ Participe de um grupo de estudos em Javascript. Juntos vamos treinar codificaç�
 
   
 
-## Fork / clone este repositório
+##  ![image-20211116140146161](Images\image-20211116140146161.png) Fork / clone este repositório
 
 Faça as atividades, seja honesto consigo mesmo, treinando e trocando ideias com outros membros
 
+<p><a href="Atividades">Conclua as atividades</a></p><br>
 
 
-## Codifique
+## ![image-20211116132751599](Images\image-20211116132751599.png) Codifique
 
 - VS Code [Download](https://code.visualstudio.com/download)
 
@@ -55,7 +56,7 @@ Faça as atividades, seja honesto consigo mesmo, treinando e trocando ideias com
 
   
 
-## Debug
+##   ![image-20211116130911518](Images\image-20211116130911518.png) Debug
 
 - NodeJS [Download](https://nodejs.org/en/download/)
 
